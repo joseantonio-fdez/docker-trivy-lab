@@ -47,8 +47,7 @@ jobs:
             --severity CRITICAL \
             --format table \
             --output trivy-report.txt \
-            vulnerable-image:latest | tee trivy-report.txt
-        TRIVY_EXIT_CODE=${PIPESTATUS[0]}
+            vulnerable-image:latest 
 
           echo "📄 Reporte guardado en trivy-report.txt"
 
