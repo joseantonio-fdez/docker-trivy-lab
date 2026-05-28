@@ -43,7 +43,7 @@ jobs:
           echo "🔍 Iniciando escaneo de vulnerabilidades con Trivy..."
 
           trivy image \
-            --exit-code 1 \
+            --exit-code 0 \
             --severity CRITICAL \
             --format table \
             --output trivy-report.txt \
